@@ -18,8 +18,10 @@ The benefits of using automated tests:
 ```
 Unit Test
 - Tests a unit of an application without its external dependencies
+
 Integration Test
-- Tests the application with its external dependencies as a whole ***can break easily as you make changes
+- Tests the application with its external dependencies as a whole **can break easily as you make changes**
+
 Test Pyramid 
 - Tells you to have more unit tests if you have more algorithms.
 ```
