@@ -8,7 +8,7 @@ Basically, testing has three types,
 3. End to end test
 ``` 
 
-End-to-end test is a manual test where testers repeat to use the UI over and over to find a bug. Unit test and Integration test, however, are built onto the software.
+End-to-end test is a manual test where testers repeat to use the UI over and over to find a bug. It is impossible to automate most of the time. Unit test and Integration test, however, are built onto the software.
 
 The benefits of using automated tests:
 ```
@@ -30,4 +30,44 @@ Test Pyramid
   /Integ\
  / Unit  \    More - algorithm
 -----------
+```
+## Automated Test Tools for Node.js
+The most popular libraries for testing are shown below.
+```
+- Jasmine
+- Mocha + Chai + Simon
+- Jest
+```
+In this repository, it will be focused on Jest. See [documentation](https://jestjs.io/docs/en/getting-started.html) for more info.
+
+Jest Installation
+``` $ npm i jest --save-dev ```
+
+Change Script in package.js
+```script { "test" : jest }```
+
+Name test files ***.test.js or .spec.js
+
+Test Function has two names but the same fucntionality
+```
+In lib.test.js
+import function to add two numbers as adder
+
+test('adding fucntion, () => {
+    const result = lib.adder(5, 6)
+    expect(result).toBe(11)
+})
+it('addes two numbers', () => {
+    const result = lib.adder(4, 6)
+    expect(result).toBe(10)
+})
+```
+
+Other methods than expect(result).toBe()
+```
+.toBeGreaterThan()
+.toBeGreaterThanOrEqual()
+.toBeLessThan()
+.toBeLessThanOrEqual()
+
 ```
