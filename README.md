@@ -39,7 +39,7 @@ The most popular libraries for testing are shown below.
 3. Jest
 ```
 In this repository, it will be focused on Jest. See [documentation](https://jestjs.io/docs/en/getting-started.html) for more info.
-
+## JEST 
 Jest Installation
 ``` $ npm i jest --save-dev ```
 
